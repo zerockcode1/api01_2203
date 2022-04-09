@@ -17,6 +17,7 @@ public class CustomServletConfig implements WebMvcConfigurer {
         registry.addMapping("/refreshAccessToken").allowedOrigins("*");
 
         registry.addMapping("/api/**").allowedOrigins("*");
+        registry.addMapping("/guest/**").allowedOrigins("*");
     }
 
 
